@@ -12,3 +12,10 @@ def miracleSort(list):
     else:
         time.sleep(1000)
         miracleSort(list)
+
+if __name__ == "__main__":
+    list1 = [1,4,2,5,6,5,3]
+    list2 = [1,2,3,4,5,6,7]
+    print('\n\n-----Miracle Sorting Algorithm-----\n')
+    print('unsorted list:   '+str(list1))
+    print('sorted list:     '+str(miracleSort(list1)))
