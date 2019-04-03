@@ -1,5 +1,7 @@
 import time
 
+count = 0
+
 def is_sorted(lst):
     for i in range(len(lst) - 1):
         if lst[i] > lst[i + 1]:
@@ -7,11 +9,17 @@ def is_sorted(lst):
     return True
 
 def miracleSort(lst):
+    global count
     if(is_sorted(lst)):
         return lst
     else:
-        time.sleep(1)
-        miracleSort(lst)
+        if count <= 5:
+            print('failed try again ' + str(5-count))
+            time.sleep(1)
+            count += 1
+            miracleSort(lst)
+        else:
+            print('FAILED!')
 
 if __name__ == "__main__":
     list1 = [1,4,2,5,6,5,3]
