@@ -23,6 +23,6 @@ def bogoBogoSort(lst):
 
 if __name__ == "__main__":
     list1 = [1,4,2,5,6,5,3]
-    print('\n\n-----Bogosort Sorting Algorithm-----\n')
+    print('\n\n-----Bogobogosort Sorting Algorithm-----\n')
     print('unsorted list:   '+str(list1))
     print('sorted list:     '+str(bogoBogoSort(list1)))

@@ -1,17 +1,17 @@
 import time
 
-def is_sorted(data):
-    for i in range(len(data) - 1):
-        if data[i] > data[i + 1]:
+def is_sorted(lst):
+    for i in range(len(lst) - 1):
+        if lst[i] > lst[i + 1]:
             return False
     return True
 
-def miracleSort(list):
-    if(is_sorted(list)):
-        return list
+def miracleSort(lst):
+    if(is_sorted(lst)):
+        return lst
     else:
         time.sleep(1)
-        miracleSort(list)
+        miracleSort(lst)
 
 if __name__ == "__main__":
     list1 = [1,4,2,5,6,5,3]
