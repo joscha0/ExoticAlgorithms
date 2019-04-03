@@ -10,7 +10,7 @@ def miracleSort(list):
     if(is_sorted(list)):
         return list
     else:
-        time.sleep(1000)
+        time.sleep(1)
         miracleSort(list)
 
 if __name__ == "__main__":
