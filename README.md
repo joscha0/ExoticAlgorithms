@@ -64,14 +64,19 @@ import file
 * **Average Case:** O(n * (n!)n)
 * **Worst Case:** ∞
 ```python
+def is_sorted(lst):
+	cpy = lst[:]
+	std = bogoBogoSort(cpy[:-1])
+	while cpy[-1] < max(std):
+		random.shuffle(cpy)
+		std = bogoBogoSort(cpy[:-1])
+	return std == lst[:-1]
+
 def bogoBogoSort(lst):
-	index = 2
-	while(not is_sorted(lst)):
-		bogoSort(lst[:index])
-		index += 1
-		if(not is_sorted(lst[:index])):
-			random.shuffle(lst)
-			index = 2
+	if len(lst) == 1:
+		return lst
+	while not is_sorted(lst):
+		random.shuffle(lst)
 	return lst
 ```
 ![](https://raw.githubusercontent.com/joscha0/ExoticAlgorithms/master/img/bogoBogoSort.png)
