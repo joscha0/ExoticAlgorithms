@@ -20,7 +20,7 @@
  - [CommunismSort](https://github.com/joscha0/ExoticAlgorithms/blob/master/CommunismSort.py "CommunismSort")
  - [MiracleSort](https://github.com/joscha0/ExoticAlgorithms/blob/master/MiracleSort.py "MiracleSort")
  - [StalinSort](https://github.com/joscha0/ExoticAlgorithms/blob/master/StalinSort.py "StalinSort")
- - [slowSort](https://github.com/joscha0/ExoticAlgorithms/blob/master/slowSort.py "slowSort")
+ - [SlowSort](https://github.com/joscha0/ExoticAlgorithms/blob/master/SlowSort.py "SlowSort")
 
 ## Getting Started
 
@@ -149,7 +149,7 @@ def stalinSort(lst):
 
 ![](https://raw.githubusercontent.com/joscha0/ExoticAlgorithms/master/img/stalinSort.png)
 
-### slowSort
+### SlowSort
 * **Best Case:** O(n ^ (lg n))
 * **Average Case:** O(n ^ (lg n))
 * **Worst Case:** O(n ^ (lg n))

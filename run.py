@@ -4,7 +4,7 @@ from  BozoSort import bozoSort
 from  CommunismSort import communismSort
 from  MiracleSort import miracleSort
 from  StalinSort import stalinSort
-from  slowSort import slowSort
+from  SlowSort import slowSort
 import numpy as np
 import time
 from pick import pick

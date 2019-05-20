@@ -15,11 +15,11 @@ def miracleSort(lst):
     else:
         if count <= 5:
             print('failed try again ' + str(5-count))
-            time.sleep(1)
             count += 1
             miracleSort(lst)
         else:
             print('FAILED!')
+            count = 0
 
 if __name__ == "__main__":
     list1 = [1,4,2,5,6,5,3]

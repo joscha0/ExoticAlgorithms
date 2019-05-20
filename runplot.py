@@ -4,23 +4,27 @@ from  BozoSort import bozoSort
 from  CommunismSort import communismSort
 from  MiracleSort import miracleSort
 from  StalinSort import stalinSort
-from  slowSort import slowSort
+from  SlowSort import slowSort
 import numpy as np
 import time
 import matplotlib
 import matplotlib.pyplot as plt
-import numpy as np
 from pick import pick
-
 
 
 def time_it(func):
     start = time.time()
     func()
     end = time.time()
-    print('sorted list: '+ str(func()))
+    #print('sorted list: '+ str(func()))
     print('Finished in {} seconds.'.format(end - start))
-    return end - start
+    if alg_name == 'miracleSort':
+        if func() != None:
+            return end - start
+        else: 
+            return 0
+    else: 
+        return end - start
 
 algsList = [bogoBogoSort, bogoSort, bozoSort, communismSort, miracleSort, stalinSort, slowSort]
 
